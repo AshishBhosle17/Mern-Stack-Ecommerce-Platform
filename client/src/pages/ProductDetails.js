@@ -20,7 +20,7 @@ const ProductDetails = () => {
   const getProduct = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/get-product/${params.slug}`
+        `https://ecommerce-app-fawn-iota.vercel.app/api/v1/product/get-product/${params.slug}`
       );
       console.log("Product Data:", data);
       setProduct(data?.product);
@@ -34,7 +34,7 @@ const ProductDetails = () => {
   const getSimilarProduct = async (pid, cid) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/related-product/${pid}/${cid}`
+        `https://ecommerce-app-fawn-iota.vercel.app/api/v1/product/related-product/${pid}/${cid}`
       );
       setRelatedProducts(data?.products);
     } catch (error) {
@@ -47,7 +47,7 @@ const ProductDetails = () => {
         <div className="col-md-6">
          
               <img
-            src={`http://localhost:8080/api/v1/product/product-photo/${product?._id}`}
+            src={`https://ecommerce-app-fawn-iota.vercel.app/api/v1/product/product-photo/${product?._id}`}
             className="card-img-top"
             alt={product?.name}
             height="300"
@@ -85,7 +85,7 @@ const ProductDetails = () => {
           {relatedProducts?.map((p) => (
             <div className="card m-2" key={p._id}>
               <img
-                src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                src={`https://ecommerce-app-fawn-iota.vercel.app/api/v1/product/product-photo/${p._id}`}
                 className="card-img-top"
                 alt={p.name}
               />
