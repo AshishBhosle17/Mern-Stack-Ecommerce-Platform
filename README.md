@@ -33,5 +33,6 @@ end
 sprintf ('The Framed message is %s', sprintf (' %s',finalmsg{:}))
 sprintf ('The byte destuffed message is %s', sprintf(' %s', destufmsg{:}))
 ![image](https://github.com/AshishBhosle17/Mern-Stack-Ecommerce-Platform/assets/140106733/0b1caec7-8a8e-4e66-a920-07fddf6199cd)
-![WhatsApp Image 2024-04-28 at 23 57 06_ea2a5ed8](https://github.com/AshishBhosle17/Mern-Stack-Ecommerce-Platform/assets/140106733/02347ad6-e873-4b40-b826-a283c694d659)
+![WhatsApp Image 2024-04-29 at 00 06 02_91586d41](https://github.com/AshishBhosle17/Mern-Stack-Ecommerce-Platform/assets/140106733/98d4b99c-c30a-41c8-91ea-6aa6aab026e4)
+
 
